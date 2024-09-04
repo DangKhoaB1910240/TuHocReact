@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import {FaTrashAlt} from 'react-icons/fa'
 const Content = () => {
 
     const [items, setItem] = useState([
@@ -23,18 +23,26 @@ const Content = () => {
         const itemsNes = items.filter((item) => item.id !== id);
         setItem(itemsNes);
     }
+    const updateData = (id) => {
+        const item = items.map((item) => item.id === id ? {...item, checked: !item.checked} : item)
+        setItem(item);
+
+    }
   return (
     
     <main>
-        <ul>
+        {items.length > 0 ? (
+            <ul>
             {items.map((item) => (
                 <li>
-                    <input type="checkbox" checked={item.checked}></input>
+                    <input type="checkbox" checked={item.checked} onChange={() => updateData(item.id)}></input>
                     <label>{item.name}</label>
-                    <button onClick={() => deleteData(item.id)}>delete</button>
+                    <FaTrashAlt onClick={() => deleteData(item.id)} role='button' tabIndex={0}></FaTrashAlt>
                 </li>
             ))}
         </ul>
+        ) : "no never"}
+        
     </main>
   )
 }
