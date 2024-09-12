@@ -1,9 +1,8 @@
 import React from 'react'
 
-const Footer = () => {
-    const date = new Date();
+const Footer = ({length}) => {
   return (
-    <div>Footer {date.getFullYear()}</div>
+    <div>Footer {length}</div>
   )
 }
 

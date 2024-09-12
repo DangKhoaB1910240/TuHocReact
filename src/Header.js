@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Header = () => {
+const Header = ({title= "abccc"}) => {
   return (
-    <div style={{background: 'mediumblue',color: '#fff'}}>Header ne2</div>
+    <div style={{background: 'mediumblue',color: '#fff'}}>{title}</div>
   )
 }
 
