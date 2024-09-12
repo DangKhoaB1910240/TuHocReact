@@ -82,8 +82,7 @@ function App() {
     setNewItem("");
   };
   return (
-    //Test thôi nhánh 1
-    //Sửa nhánh 1 //Test thử xem
+    //Khoa1
     <div className="App">
       <header className="App-header">
         <Header title="Tiêu đề nè" />
