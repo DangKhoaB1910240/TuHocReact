@@ -8,7 +8,7 @@ function App() {
         <Header />
         <Content />
         <Footer />
-        hello nhanh1
+        hello nhanh1 hello nhanh2.1
       </header>
     </div>
   );
