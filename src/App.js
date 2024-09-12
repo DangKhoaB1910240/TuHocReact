@@ -1,7 +1,6 @@
-
-import Header from './Header.js'
-import Content from './Content.js';
-import Footer from './Footer.js';
+import Header from "./Header.js";
+import Content from "./Content.js";
+import Footer from "./Footer.js";
 function App() {
   return (
     <div className="App">
@@ -9,6 +8,7 @@ function App() {
         <Header />
         <Content />
         <Footer />
+        hello nhanh1
       </header>
     </div>
   );
